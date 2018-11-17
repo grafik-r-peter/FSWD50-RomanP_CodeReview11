@@ -1,0 +1,112 @@
+
+/// IMPORTING STUFF ///
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700');
+
+/// VARIABLES AND MIXINS ///
+
+$prim-font: 'Lato', sans-serif;
+$sec-font:	'Lato', sans-serif;
+$prim-font-size: 0.75rem;
+$prim-color: #171E24;
+$sec-color: #C5C5C5;
+
+
+/// BASIC TYPE AND LAYOUT ///
+body {
+	font-family: $prim-font;
+	transition: 0.3s;
+}
+
+p {
+	font-size: $prim-font-size;
+}
+
+h3 {
+	font-size: 1.2rem;
+}
+
+// NAVI //
+
+.bg-travel {
+	background: rgba(242, 242, 242, 0.9)
+}
+
+
+// CAROUSEL //
+.carousel-caption {
+    background: rgba(27, 93, 77, 0.8);
+    left: 0%;
+    right: 0%;
+    padding: 10px;
+    -webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.4);
+	box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.4);
+}
+
+.carousel-item {
+	transition: transform 1s ease, opacity .5s ease-out;
+	h1 {
+		font-size: 4rem;
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+	}
+
+	h2 {
+		text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+	}
+}
+
+
+/// TEASER STYLING ///
+
+.img-places {
+	width: 100%;
+    height: 180px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.place-content {
+	p {
+		margin-bottom: 0.4rem;
+	}
+}
+
+
+
+
+// STYLING OVERLAY ON TEASERS //
+
+.caption-category {
+    position: absolute;
+    margin-top: -40px;
+    color: #fff;
+    padding: 0.5rem;
+    font-size: $prim-font-size;
+    font-weight: 600;
+    background: rgba(27, 93, 77, 0.8);
+    cursor: auto;
+}
+
+//  MEDIA QUERIES ///
+
+@media only screen and (max-width:36em) { 
+	.caption-category {
+	    position: relative;
+	    margin-top: 20px;
+	}
+
+	.carousel-item h1 {
+		font-size: 2rem;
+	}
+	.carousel-item h2 {
+		font-size: 1.5rem;
+	}
+
+}
+
+
+// ADMIN PANEL //
+
+.admin-table {
+	font-size: 0.6rem;
+}
